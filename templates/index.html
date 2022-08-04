@@ -12,7 +12,7 @@ Sensive Blog - Home
           <div class="flex-fill" style="margin-right: 30px;">
               <div class="card blog__slide text-center">
                   <div class="blog__slide__img">
-                    <img class="card-img rounded-0" src="{{ post.image_url }}" alt="">
+                    <img class="card-img rounded-0" src="{{ post.image_url }}" alt="Картинка блога">
                   </div>
                   <div class="blog__slide__content">
                     <h3><a href="post/{{post.slug}}">{{ post.title }}</a></h3>
@@ -35,9 +35,9 @@ Sensive Blog - Home
             <div class="single-recent-blog-post">
               <div class="thumb">
                 {% if post.image_url %}
-                  <img class="img-fluid" src="{{ post.image_url }}" alt="">
+                  <img class="img-fluid" src="{{ post.image_url }}" alt="Баннер блога">
                 {% else %}
-                  <img class="img-fluid" src= "{% static 'img/banner/blog.png' %}" alt="">
+                  <img class="img-fluid" src= "{% static 'img/banner/blog.png' %}" alt="Баннер блога">
                 {% endif %}
                 <ul class="thumb-info">
                   <li><a href="post/{{post.slug}}"><i class="ti-user"></i>{{ post.author }}</a></li>
